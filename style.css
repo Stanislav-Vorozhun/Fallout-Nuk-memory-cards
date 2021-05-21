@@ -1,15 +1,18 @@
 @font-face {
     font-family: SanFran;
-    /* Имя шрифта */
     src: url(font/san.ttf);
-    /* Путь к файлу со шрифтом */
+    
 }
 
 @font-face {
     font-family: Bebas;
-    /* Имя шрифта */
     src: url(font/BebasNeue.ttf);
-    /* Путь к файлу со шрифтом */
+   
+}
+
+@font-face {
+    font-family: Mono;
+    src: url(font/monofonto.ttf);
 }
 
 * {
@@ -26,10 +29,9 @@ html {
 }
 
 body {
-    /* Background pattern from Subtle Patterns */
+    
     background: url('Image/ignasi_pattern_s.png');
     font-family: "SanFran";
-    /*one Em roughly ten pixels (16 x 62.5% = 10)*/
     font-size: 62.5%;
     letter-spacing: 1.5px;
     margin: 0;
@@ -64,15 +66,35 @@ ul>li {
 Header
 ------------------------------------*/
 
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+}
+
 h1 {
-    font-size: 3em;
+    font-size: 14em;
     font-weight: 400;
     font-family: 'Bebas';
 }
 
 h2 {
-    font-size: 2.5em;
-    font-weight: 600;
+    font-size: 3.5em;
+    font-weight: 400;
+    font-family: 'Bebas';
+}
+
+.headerImg {
+    position: absolute;
+    right: 0;
+    bottom: 0vh;
+    z-index: -3;
+    width: 30vw;
 }
 
 p {
@@ -145,19 +167,27 @@ Section - Modal
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    /* 5% from the top and centered */
+    background: url(Image/backgrndModal.jpg) center center / cover no-repeat;
     margin: 5% auto;
-    border: 0.8em solid #fc4;
+    border: 0.8em solid rgb(0, 0, 0);
     padding-right: 2em;
-    width: 80%;
+    width: 900px;
+    height: 510px;
+    border-radius: 20px;
+    font-family: 'Mono';
+    font-weight: 600;
+    color: #51a55f;
+    
 }
+
+
+
 
 /* The Close Button */
 
 .close {
     align-self: flex-end;
-    color: #28e;
+    color: #51a55f;
     font-size: 5em;
 }
 
@@ -176,7 +206,9 @@ Section - Modal
 }
 
 p.stats {
+    font-family: 'Mono';
     font-weight: 600;
+    color: #51a55f;
 }
 
 p.stats:last-child {
@@ -184,8 +216,10 @@ p.stats:last-child {
 }
 
 .playAgainBtn {
-    background: #28e;
+    background: #51a55f;
     margin-bottom: 1em;
+    font-family: 'Mono';
+    color: black;
 }
 
 /*----------------------------------  
@@ -295,10 +329,11 @@ img {
 
 @media screen and (min-width: 800px) {
     h1 {
-        font-size: 6em;
+        font-size: 17em;
     }
     p {
-        font-size: 2.3em;
+        font-size: 2em;
+        padding-bottom: 1em;
     }
     .deck {
         height: 70em;

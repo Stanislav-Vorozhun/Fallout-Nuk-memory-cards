@@ -58,7 +58,7 @@ function timer() {
             minutes++;
             seconds = 0;
         }
-        timeCounter.innerHTML = "<li class='fa fa-hourglass-start'></li>" + 'Timer: ' + minutes + ' мин' + seconds + ' сек';
+        timeCounter.innerHTML = '<i class="fa fa-hourglass-start"></i>' + 'Время: ' + minutes + ' мин ' + seconds + ' сек';
     }, 1000);
 }
 
@@ -71,7 +71,7 @@ function resetGame() {
     timeStart = false;
     seconds = 0;
     minutes = 0;
-    timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + ' Timer: 00:00';
+    timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + ' Время: 00:00';
     star[1].firstElementChild.classList.add("fa-star");
     star[2].firstElementChild.classList.add("fa-star");
     starCount = 3;
