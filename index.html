@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FallOut Nuk Cards</h1>
+            <h2>Memory game</h2>
+        </header>
+
+        <section class="scorePanel">
+            <h3>Score</h3>
+            <ul class="starRating" id="starRating">
+                <li class="star"><i class="fa fa-star"></i>
+                </li>
+                <li class="star"><i class="fa fa-star"></i>
+                </li>
+                <li class="star"><i class="fa fa-star"></i>
+                </li>
+            </ul>
+            <span class="moveCounter">0</span>
+            <div class="timerContainer">
+                <span class="timer"><i class="fa fa-hourglass-start"></i>Время: 00:00</span>
+            </div>
+            <div class="reset">
+                <button class="btn resetBtn">СТАРТ<i class="fa fa-repeat"></i></button>
+            </div>
+        </section>
+
+        <section class="winGameModal">
+            <div class="modal" id="modal">
+                <div class="modalContent">
+                    <span class="close">&times;</span>
+                    <h2>Поздравляем!</h2>
+                    <p>Вы нашли все 8 пар карточек и выйграли.</p>
+                    <img src="Image/Vault-Boy-Thumb-Up.jpg" alt="Персонаж Волт из игры FallOut" class="modalImg">
+                    <button class="btn playAgainBtn">Еще разок</button>
+                </div>
+            </div>
+        </section>
+        <ul class="deck"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
