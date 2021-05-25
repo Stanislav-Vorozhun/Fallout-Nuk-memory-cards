@@ -37,7 +37,7 @@ function startGame() {
         liTag.classList.add('card');
         const addImg = document.createElement('img');
         liTag.appendChild(addImg);
-        addImg.setAttribute('src', 'image/' + shuffledDeck[i]);
+        addImg.setAttribute('src', './image/' + shuffledDeck[i]);
         addImg.setAttribute('alt', 'vault boy');
         deck.appendChild(liTag);
     }
