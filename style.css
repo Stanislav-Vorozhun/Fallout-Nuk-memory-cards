@@ -1,18 +1,18 @@
 @font-face {
     font-family: SanFran;
-    src: url(font/san.ttf);
+    src: url(./font/san.ttf);
     
 }
 
 @font-face {
     font-family: Bebas;
-    src: url(font/BebasNeue.ttf);
+    src: url(./font/BebasNeue.ttf);
    
 }
 
 @font-face {
     font-family: Mono;
-    src: url(font/monofonto.ttf);
+    src: url(./font/monofonto.ttf);
 }
 
 * {
@@ -30,7 +30,7 @@ html {
 
 body {
     
-    background: url('Image/ignasi_pattern_s.png');
+    background: url('./Image/ignasi_pattern_s.png');
     font-family: "SanFran";
     font-size: 62.5%;
     letter-spacing: 1.5px;
@@ -55,11 +55,11 @@ ul>li {
 }
 
 .btn {
-    border-radius: 1em;
     border: none;
     color: #fff;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
     padding: 0.8em;
+    width: 10em;
 }
 
 /*----------------------------------  
@@ -87,6 +87,7 @@ h2 {
     font-size: 3.5em;
     font-weight: 400;
     font-family: 'Bebas';
+    padding-bottom: 5px;
 }
 
 .headerImg {
@@ -98,7 +99,8 @@ h2 {
 }
 
 p {
-    font-size: 1.6em;
+    font-size: 2em;
+    padding: 23px;
 }
 
 h3 {
@@ -167,7 +169,7 @@ Section - Modal
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(Image/backgrndModal.jpg) center center / cover no-repeat;
+    background: url(./Image/backgrndModal.jpg) center center / cover no-repeat;
     margin: 5% auto;
     border: 0.8em solid rgb(0, 0, 0);
     padding-right: 2em;
@@ -219,7 +221,9 @@ p.stats:last-child {
     background: #51a55f;
     margin-bottom: 1em;
     font-family: 'Mono';
+    font-size: 17px;
     color: black;
+    width: 10em;
 }
 
 /*----------------------------------  
@@ -228,6 +232,7 @@ Deck of Cards
 
 /*Mobile first responsivness*/
 
+
 .deck {
     background: linear-gradient(to bottom, #5cf, #28e);
     border-radius: 1.5em;
@@ -235,10 +240,10 @@ Deck of Cards
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 35em;
-    margin-bottom: 6em;
+    height: 65em;
+    margin-bottom: 3em;
     padding: 0.5em;
-    width: 35em;
+    width: 101em;
 }
 
 .deck, .card {
@@ -248,18 +253,13 @@ Deck of Cards
 .card {
     background: #fc4;
     border-radius: 0.5em;
-    height: 7em;
-    width: 7em;
+    height: 14em;
+    width: 22em;
 }
-
-/*
-  To disable the color highlight if and img is clicked
-  https://stackoverflow.com/questions/21107439/disable-or-change-firefoxs-element-image-highlight-color
-  */
 
 img {
     user-select: none;
-    width: 6em;
+    width: 12em;
 }
 
 .deck img {
@@ -302,64 +302,196 @@ img {
     }
 }
 
-@media screen and (min-width: 550px) {
+
+
+@media (max-width: 1230px){
+    h1 {
+        font-size: 15em;
+    }
+    
+    h2 {
+        font-size: 5.5em;
+    }
+
+    .headerImg {
+        width: 35vw;
+    }
+
+
+
     .deck {
-        height: 50em;
-        padding: 2em;
-        width: 50em;
+        height: 58em;
+        width: 85em;
     }
+
     .card {
-        height: 10em;
-        width: 10em;
+        height: 13em;
+        width: 18em;
     }
-    .deck img {
-        width: 9em;
+    
+    img {
+        width: 11em;
     }
-    .modalContent h2 {
-        font-size: 4em;
+    
+
+    p {
+        padding-bottom: 20px;
     }
-    .playAgainBtn {
-        font-size: 1.8em;
-    }
+    
+
 }
 
-/*---------------------------------- 
-  Desktops
-  ------------------------------------*/
+@media (max-width: 990px){
 
-@media screen and (min-width: 800px) {
-    h1 {
-        font-size: 17em;
+    .headerImg {
+        bottom: 0vh;
+        width: 38vw;
+        right: 0px;
     }
-    p {
-        font-size: 2em;
-        padding-bottom: 1em;
+
+    .btn {
+        width: 13em;
+        height: 4em;
     }
+
     .deck {
-        height: 70em;
-        width: 70em;
+        height: 46em;
+        width: 68em;
     }
+
+    img {
+        width: 9em;
+    }
+
+    .modalContent {
+        width: 720px;
+        height: 400px;
+    }
+
+    p {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .btn {
+        width: 10em;
+        height: 4em;
+    }
+
+    .scorePanel {
+        padding: 4em 0 2em;
+    }
+
+    h1 {
+        font-size: 12em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
     .card {
-        height: 15em;
+        height: 10em;
         width: 15em;
     }
-    .deck img {
-        width: 13em;
+    
+}
+
+@media (max-width: 770px){
+
+    .deck {
+        height: 47em;
+        width: 53em;
     }
-    .resetBtn {
-        font-size: 0.8em;
+
+    .card {
+        height: 11em;
+        width: 12em;
     }
-    .footer {
-        font-size: 1.2em;
+
+    img {
+        width: 10em;
     }
-    .modalContent h2 {
-        font-size: 5em;
+
+    .modalContent {
+        width: 530px;
+        height: 300px;
     }
-    /* Modal Image*/
-    .modalImg {
-        width: 30em;
+
+    h2 {
+        font-size: 2.5em;
     }
+
+    p {
+        font-size: 1.5em;
+        padding: 0;
+    padding-bottom: 5px;
+    }
+
     .playAgainBtn {
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 575px){
+
+    h1 {
+        font-size: 6em;
+    }
+
+    .btn {
+        width: 9em;
+        height: 3em;
+    }
+
+    .headerImg {
+        width: 60vw;
+    }
+
+    .scorePanel {
+        padding: 4em 0 6em;
+    }
+
+    .deck {
+        height: 32em;
+        width: 29em;
+    }
+
+    .card {
+        height: 6em;
+        width: 6.5em;
+    }
+    
+    img {
+        width: 5.5em;
+    }
+
+    .modalContent {
+        width: 310px;
+        height: 169px;
+        margin: 50% auto;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 1em;
+        padding: 0;
+        padding-bottom: 2px;
+    }
+
+    .playAgainBtn {
+        font-size: 9px;
+    }
+
+    .close {
+        align-self: flex-end;
+        color: #51a55f;
         font-size: 2em;
     }
+
 }

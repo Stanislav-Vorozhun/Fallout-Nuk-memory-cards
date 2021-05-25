@@ -146,9 +146,9 @@ function addStats() {
         stats.appendChild(statsElements);
     }
     let p = stats.querySelectorAll('p.stats');
-    p[0].innerHTML = 'Время игры: ' + minutes + ' мин ' + seconds + ' сек';
-    p[1].innerHTML = 'Ходов: ' + moves;
-    p[2].innerHTML = 'Ваш рейтинг: ' + starCount + ' звезды из 3';
+    p[0].innerHTML = 'Time: ' + minutes + ' min ' + seconds + ' sec';
+    p[1].innerHTML = 'Steps: ' + moves;
+    p[2].innerHTML = 'Rating: ' + starCount + ' out of 3';
 }
 
 function displayModal() {
