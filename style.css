@@ -399,6 +399,15 @@ img {
 
 @media (max-width: 770px){
 
+    .btn {
+        margin-bottom: 8em;
+    }
+    .headerImg {
+        bottom: 0vh;
+        width: 77vw;
+        right: 0px;
+    }
+
     .deck {
         height: 47em;
         width: 53em;
@@ -419,7 +428,7 @@ img {
     }
 
     h2 {
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 
     p {
@@ -430,6 +439,10 @@ img {
 
     .playAgainBtn {
         font-size: 15px;
+    }
+
+    .scorePanel {
+        font-size: 2.4em;
     }
     
 }
