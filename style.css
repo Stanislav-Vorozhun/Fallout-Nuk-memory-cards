@@ -1,13 +1,11 @@
 @font-face {
     font-family: SanFran;
     src: url(./font/san.ttf);
-    
 }
 
 @font-face {
     font-family: Bebas;
     src: url(./font/BebasNeue.ttf);
-   
 }
 
 @font-face {
@@ -29,7 +27,6 @@ html {
 }
 
 body {
-    
     background: url('./Image/ignasi_pattern_s.png');
     font-family: "SanFran";
     font-size: 62.5%;
@@ -73,8 +70,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
-
 }
 
 h1 {
@@ -179,11 +174,7 @@ Section - Modal
     font-family: 'Mono';
     font-weight: 600;
     color: #51a55f;
-    
 }
-
-
-
 
 /* The Close Button */
 
@@ -231,7 +222,6 @@ Deck of Cards
 ------------------------------------*/
 
 /*Mobile first responsivness*/
-
 
 .deck {
     background: linear-gradient(to bottom, #5cf, #28e);
@@ -302,103 +292,77 @@ img {
     }
 }
 
-
-
-@media (max-width: 1230px){
+@media (max-width: 1230px) {
     h1 {
         font-size: 15em;
     }
-    
     h2 {
         font-size: 5.5em;
     }
-
     .headerImg {
         width: 35vw;
     }
-
-
-
     .deck {
         height: 58em;
         width: 85em;
     }
-
     .card {
         height: 13em;
         width: 18em;
     }
-    
     img {
         width: 11em;
     }
-    
-
     p {
         padding-bottom: 20px;
     }
-    
-
 }
 
-@media (max-width: 990px){
-
+@media (max-width: 990px) {
     .headerImg {
         bottom: 0vh;
         width: 38vw;
         right: 0px;
     }
-
     .btn {
         width: 13em;
         height: 4em;
     }
-
     .deck {
         height: 46em;
         width: 68em;
     }
-
     img {
         width: 9em;
     }
-
     .modalContent {
         width: 720px;
         height: 400px;
     }
-
     p {
         padding: 0;
         padding-bottom: 10px;
     }
-
     .btn {
         width: 10em;
         height: 4em;
     }
-
     .scorePanel {
         padding: 4em 0 2em;
     }
-
     h1 {
         font-size: 12em;
     }
-
     h2 {
         font-size: 3.5em;
     }
-
     .card {
         height: 10em;
         width: 15em;
     }
-    
 }
 
-@media (max-width: 770px){
-
+@media (max-width: 770px) {
     .btn {
         margin-bottom: 8em;
     }
@@ -407,104 +371,88 @@ img {
         width: 77vw;
         right: 0px;
     }
-
     .deck {
         height: 47em;
         width: 53em;
     }
-
     .card {
         height: 11em;
         width: 12em;
     }
-
     img {
         width: 10em;
     }
-
     .modalContent {
         width: 530px;
         height: 300px;
     }
-
     h2 {
         font-size: 3.5em;
     }
-
     p {
         font-size: 1.5em;
         padding: 0;
-    padding-bottom: 5px;
+        padding-bottom: 5px;
     }
-
     .playAgainBtn {
         font-size: 15px;
     }
-
     .scorePanel {
         font-size: 2.4em;
     }
-    
 }
 
-@media (max-width: 575px){
-
+@media (max-width: 376px) {
     h1 {
-        font-size: 6em;
+        font-size: 7em;
     }
-
+    h2 {
+        font-size: 3em;
+        padding-bottom: 10px;
+    }
     .btn {
-        width: 9em;
+        width: 10em;
         height: 3em;
     }
-
     .headerImg {
-        width: 60vw;
+        width: 80vw;
     }
-
     .scorePanel {
-        padding: 4em 0 6em;
+        padding: 6em 0 5em;
+        font-size: 1.5em;
     }
-
     .deck {
-        height: 32em;
-        width: 29em;
+        height: 52em;
+        width: 90%;
     }
-
     .card {
-        height: 6em;
-        width: 6.5em;
+        height: 9em;
+        width: 23%;
     }
-    
     img {
-        width: 5.5em;
+        width: 7em;
     }
-
     .modalContent {
-        width: 310px;
-        height: 169px;
+        width: 94%;
+        height: 210px;
         margin: 50% auto;
     }
-
-    h2 {
-        font-size: 1.5em;
-        padding-bottom: 5px;
+    .modalContent h2 {
+        font-size: 2em;
+        padding-bottom: 4px;
     }
-
     p {
-        font-size: 1em;
+        font-size: 9px;
         padding: 0;
-        padding-bottom: 2px;
+        padding-bottom: 0px;
     }
-
     .playAgainBtn {
         font-size: 9px;
+        margin: 2em;
     }
-
     .close {
         align-self: flex-end;
         color: #51a55f;
         font-size: 2em;
     }
-
 }
