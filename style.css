@@ -418,7 +418,7 @@ img {
         width: 80vw;
     }
     .scorePanel {
-        padding: 6em 0 5em;
+        padding: 9em 0 5em;
         font-size: 1.5em;
     }
     .deck {
@@ -426,7 +426,7 @@ img {
         width: 90%;
     }
     .card {
-        height: 9em;
+        height: 8em;
         width: 23%;
     }
     img {
