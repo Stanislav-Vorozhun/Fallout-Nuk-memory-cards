@@ -294,6 +294,47 @@ img {
     }
 }
 
+@media (max-width: 1538px) {
+    h1 {
+        font-size: 18em;
+    }
+
+    h2 {
+        font-size: 6.5em;
+    }
+
+    .btn {
+        
+        width: 13em;
+        height: 4em;
+    }
+
+    .scorePanel {
+        font-size: 1.9em;
+        padding: 8em 0 1em;
+    }
+
+    .deck {
+        height: 52em;
+        width: 82em;
+    }
+
+    .card {
+        
+        height: 12em;
+        width: 17em;
+    }
+
+    img {
+        width: 9.9em;
+    }
+
+    .modalContent {
+        margin: 5% auto;
+        
+    }
+}
+
 @media (max-width: 1230px) {
     h1 {
         font-size: 15em;
