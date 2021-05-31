@@ -1,4 +1,18 @@
+'use strict'
 
+$('[data-scroll]').on('click', function(e) {
+    e.preventDefault();
+
+    let blockId = $(this).data('scroll'),
+        blockOffset = $(blockId).offset().top;
+
+
+    $('html, body').animate({
+        scrollTop: blockOffset
+    }, 800);
+
+
+});
 
 let opened = [],
     matched = [],
@@ -58,7 +72,7 @@ function timer() {
             minutes++;
             seconds = 0;
         }
-        timeCounter.innerHTML = '<i class="fa fa-hourglass-start"></i>' + 'Время: ' + minutes + ' мин ' + seconds + ' сек';
+        timeCounter.innerHTML = '<i class="fa fa-hourglass-start"></i>' + 'Time: ' + minutes + ' min ' + seconds + ' sec';
     }, 1000);
 }
 
@@ -71,7 +85,7 @@ function resetGame() {
     timeStart = false;
     seconds = 0;
     minutes = 0;
-    timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + ' Время: 00:00';
+    timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + ' Time: 00:00';
     star[1].firstElementChild.classList.add("fa-star");
     star[2].firstElementChild.classList.add("fa-star");
     starCount = 3;
@@ -202,4 +216,6 @@ playAgain.addEventListener('click', function () {
     modal.style.display = 'none';
     resetGame();
 });
+
+
 

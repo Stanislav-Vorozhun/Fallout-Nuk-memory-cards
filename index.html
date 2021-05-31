@@ -18,15 +18,13 @@
                 </h2>
                 <img class="headerImg" src="./Image/vault2.webp" alt="vault boy">
                 <div class="reset">
-                    <button class="btn resetBtn">СТАРТ<i class="fa fa-repeat"></i></button>
+                    <button class="btn resetBtn" data-scroll='#deck'>START<i class="fa fa-repeat" ></i></button>
                 </div>
             </div>
-
-
         </header>
 
         <section class="scorePanel">
-            <h3>Очки</h3>
+            <h3>Score</h3>
             <ul class="starRating" id="starRating">
                 <li class="star"><i class="fa fa-star"></i>
                 </li>
@@ -37,7 +35,7 @@
             </ul>
             <span class="moveCounter">0</span>
             <div class="timerContainer">
-                <span class="timer"><i class="fa fa-hourglass-start"></i>Время: 00:00</span>
+                <span class="timer"><i class="fa fa-hourglass-start"></i>Time: 00:00</span>
             </div>
             
         </section>
@@ -53,9 +51,10 @@
                 </div>
             </div>
         </section>
-        <ul class="deck"></ul>
+        <ul class="deck" id="deck"></ul>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
 
 </body>
