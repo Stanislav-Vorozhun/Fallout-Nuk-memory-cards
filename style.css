@@ -108,7 +108,7 @@ Section - Score Panel
 
 .scorePanel {
     font-size: 2em;
-    padding: 7em 0 1em;
+    padding: 10em 0 2em;
 }
 
 .starRating>li {
@@ -164,7 +164,7 @@ Section - Modal
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(./Image/backgrndModal.jpg) center center / cover no-repeat;
+    background: url(./Image/backgrndModal.webp) center center / cover no-repeat;
     margin: 5% auto;
     border: 0.8em solid rgb(0, 0, 0);
     padding-right: 2em;
