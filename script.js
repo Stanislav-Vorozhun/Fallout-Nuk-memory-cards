@@ -1,6 +1,6 @@
 'use strict'
 
-$('[data-scroll]').on('click', function(e) {
+$('[data-scroll]').on('click', function (e) {
     e.preventDefault();
 
     let blockId = $(this).data('scroll'),
@@ -30,7 +30,10 @@ const deckCards = ['Agility.png', 'Agility.png', 'Boat.png', 'Boat.png', 'Citize
     playAgain = document.querySelector('.playAgainBtn'),
     movesCount = document.querySelector('.moveCounter'),
     star = document.getElementById("starRating").querySelectorAll('.star'),
-    timeCounter = document.querySelector('.timer');
+    timeCounter = document.querySelector('.timer'),
+    sample = document.getElementById('winsound'),
+    clickSound = document.getElementById('clickSound'),
+    pointSound = document.getElementById('pointSound');
 
 function shuffleArr(arr) {
     // Фишер-Йейтс
@@ -133,9 +136,11 @@ function match() {
         document.body.style.pointerEvents = 'auto';
         winGame();
         opened = [];
+        pointSound.play();
     }, 600);
     movesCounter();
     starRating();
+   
 }
 
 function noMatch() {
@@ -168,12 +173,16 @@ function addStats() {
 function displayModal() {
     const modalClose = document.getElementsByClassName('close')[0];
     modal.style.display = 'block';
+    sample.play();
     modalClose.onclick = function () {
         modal.style.display = 'none';
+        
     };
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = 'none';
+            
+            
         }
     };
 }
@@ -187,6 +196,7 @@ function winGame() {
 }
 
 deck.addEventListener("click", function (evt) {
+    
     if (evt.target.nodeName === "LI") {
         console.log(evt.target.nodeName + ' was clicked');
         if (timeStart === false) {
@@ -196,9 +206,10 @@ deck.addEventListener("click", function (evt) {
         flipCard();
     }
 
-    
+
 
     function flipCard() {
+        clickSound.play();
         evt.target.classList.add('flip');
         addToOpened();
     }

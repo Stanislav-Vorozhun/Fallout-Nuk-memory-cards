@@ -48,10 +48,15 @@
                     <p>You have won the game and found all 8 pairs of cards.</p>
                     <!-- <img src="Image/Vault-Boy-Thumb-Up.jpg" alt="Персонаж Волт из игры FallOut" class="modalImg"> -->
                     <button class="btn playAgainBtn">Restart</button>
+                    <audio id="winsound" src="fx.mp3" preload="auto">
                 </div>
             </div>
         </section>
-        <ul class="deck" id="deck"></ul>
+        <ul class="deck" id="deck">
+            <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+            <audio id="pointSound" src="yes.mp3" preload="auto"></audio>
+            
+        </ul>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
