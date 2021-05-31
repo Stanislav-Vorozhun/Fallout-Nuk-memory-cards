@@ -56,7 +56,8 @@ ul>li {
     color: #fff;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
     padding: 0.8em;
-    width: 10em;
+    width: 15em;
+    height: 5em;
 }
 
 /*----------------------------------  
@@ -73,13 +74,13 @@ header {
 }
 
 h1 {
-    font-size: 14em;
+    font-size: 20em;
     font-weight: 400;
     font-family: 'Bebas';
 }
 
 h2 {
-    font-size: 3.5em;
+    font-size: 8.5em;
     font-weight: 400;
     font-family: 'Bebas';
     padding-bottom: 5px;
@@ -90,7 +91,7 @@ h2 {
     right: 0;
     bottom: 0vh;
     z-index: -3;
-    width: 30vw;
+    width: 35vw;
 }
 
 p {
@@ -107,7 +108,7 @@ Section - Score Panel
 ------------------------------------*/
 
 .scorePanel {
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 10em 0 2em;
 }
 
@@ -160,20 +161,21 @@ Section - Modal
 /* Modal Content/Box */
 
 .modalContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(./Image/backgrndModal.webp) center center / cover no-repeat;
-    margin: 5% auto;
-    border: 0.8em solid rgb(0, 0, 0);
-    padding-right: 2em;
-    width: 900px;
-    height: 510px;
-    border-radius: 20px;
-    font-family: 'Mono';
-    font-weight: 600;
-    color: #51a55f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(./Image/backgrndModal.webp) center center / cover no-repeat;
+        margin: 10% auto;
+        border: 0.8em solid rgb(0, 0, 0);
+        padding-right: 2em;
+        width: 990px;
+        height: 546px;
+        border-radius: 20px;
+        font-family: 'Mono';
+        font-weight: 600;
+        color: #51a55f;
+    
 }
 
 /* The Close Button */
@@ -230,7 +232,7 @@ Deck of Cards
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 50em;
+    height: 80em;
     margin-bottom: 3em;
     padding: 0.5em;
     width: 94em;
@@ -243,13 +245,13 @@ Deck of Cards
 .card {
     background: #fc4;
     border-radius: 0.5em;
-    height: 11em;
-    width: 19em;
+    height: 17em;
+    width: 20em;
 }
 
 img {
     user-select: none;
-    width: 9.9em;
+    width: 14.9em;
 }
 
 .deck img {
